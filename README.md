@@ -8,12 +8,13 @@ Repositorio contiene scripts que permiten realizar múltiples peticiones GET en 
 
 - Requests==2.31.0
 - Python >= 3.7.9\*
-  Es posible que sea compatible con otras versiones de python 3, aunque esto no fue verificado
+
+\*:Es posible que sea compatible con otras versiones de python 3, aunque esto no fue verificado
 
 ## Ejecución
 
 ```
-python src/getting_payroll -u [URL] -t [N_THREADS] -r [N_REQUESTS] -c -s
+python python/src/getting_payroll -u [URL] -t [N_THREADS] -r [N_REQUESTS] -c -s
 ```
 
 - `-u`: Dirección HTTP o HTTPs sobre la cual se quieren hacer las peticiones GET.
