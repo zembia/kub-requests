@@ -14,11 +14,16 @@ Repositorio contiene scripts que permiten realizar múltiples peticiones GET en 
 ## Ejecución
 
 ```
-python python/src/getting_payroll -u [URL] -t [N_THREADS] -r [N_REQUESTS] -c -s
+python python/src/getting_payroll -u <URL> -t <THREADS> -r <N_REQUESTS> [-c] [-s]
 ```
 
-- `-u`: Dirección HTTP o HTTPs sobre la cual se quieren hacer las peticiones GET.
-- `-t`: Cantidad de hebras que se quiere utilizar para realizar peticiones.
-- `-r`: Cantidad de peticiones que se quiere realizar con cada hebra.
-- `-c`: Limpia el registro de errores. En caso contrario, se sigue agregando errores al archivo existente.
-- `-s`: Mantiene una sesión activa por cada hebra, permitiendo la utilización de cookies en las peticiones.
+### Argumentos requeridos
+
+- `-u, --url <URL>`: Dirección HTTP o HTTPs sobre la cual se quieren hacer las peticiones GET.
+- `-t, --threads <THREADS>`: Cantidad de hebras que se quiere utilizar para realizar peticiones.
+- `-r, --requests <REQUESTS>`: Cantidad de peticiones que se quiere realizar con cada hebra.
+
+### Argumnetos opcionales
+
+- `-c, --clear`: Limpia el registro de errores. En caso contrario, se sigue agregando errores al archivo existente.
+- `-s, --session`: Mantiene una sesión activa por cada hebra, permitiendo la utilización de cookies en las peticiones.
