@@ -14,7 +14,7 @@ Repositorio contiene scripts que permiten realizar múltiples peticiones GET en 
 ## Ejecución
 
 ```
-python python/src/getting_payroll -u <URL> -t <THREADS> -r <N_REQUESTS> [-c] [-s]
+python python/src/send_requests.py -u <URL> -t <THREADS> -r <N_REQUESTS> [-c] [-s]
 ```
 
 ### Argumentos requeridos
