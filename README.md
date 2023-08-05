@@ -49,8 +49,8 @@ node javascript/src/send_requests.js -u <URL> -t <THREADS> -r <N_REQUESTS> [-c]
 - `-t, --threads <THREADS>`: Cantidad de hebras que se quiere utilizar para realizar peticiones.\*
 - `-r, --requests <REQUESTS>`: Cantidad de peticiones que se quiere realizar con cada hebra.
 
-\*: Para mantener la coherencia entre las llamadas del script python y javacsript se dejó el parámetro de threads, no obstante acá solo se ejecuta el proceso principal en una sola hebra, y las peticiones se resuelven de forma asíncrona.
-
 ### Argumnetos opcionales
 
 - `-c, --clear`: Limpia el registro de errores. En caso contrario, se sigue agregando errores al archivo existente.
+
+\*: El parámetro `threads` no se utiliza en javacsript, y solo se mantuvo para mantener coherencia entre los script de python y javascript.
