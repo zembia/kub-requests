@@ -14,7 +14,7 @@ Repositorio contiene scripts que permiten realizar múltiples peticiones GET en 
 ## Ejecución
 
 ```
-python python/src/send_requests.py -u <URL> -t <THREADS> -r <N_REQUESTS> [-c] [-s]
+python python/src/send_requests.py -u <URL> -t <THREADS> -r <REQUESTS> [-c] [-s]
 ```
 
 ### Argumentos requeridos
@@ -40,7 +40,7 @@ python python/src/send_requests.py -u <URL> -t <THREADS> -r <N_REQUESTS> [-c] [-
 ## Ejecución
 
 ```
-node javascript/src/send_requests.js -u <URL> -t <THREADS> -r <N_REQUESTS> [-c]
+node javascript/src/send_requests.js -u <URL> -t <THREADS> -r <REQUESTS> [-c]
 ```
 
 ### Argumentos requeridos
