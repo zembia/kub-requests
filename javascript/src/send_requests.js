@@ -57,17 +57,15 @@ async function main() {
   }
 
   // Write results in console/file if there was any errors
-  if (errorLog.length > 0) {
-    const heading = `Errors thread:0/requests:${errorLog.length}\n`;
-    fs.appendFileSync(logFilename, heading);
-    for (const error of errorLog) {
-      fs.appendFileSync(
-        logFilename,
-        `Error ID ${error.requestId}:\n'${error.value}'\n`
-      );
-    }
-    console.log(heading);
+  const heading = `Errors thread:0/requests:${errorLog.length}\n`;
+  fs.appendFileSync(logFilename, heading);
+  for (const error of errorLog) {
+    fs.appendFileSync(
+      logFilename,
+      `Error ID ${error.requestId}:\n'${error.value}'\n`
+    );
   }
+  console.log(heading);
 }
 
 // Do loop for requests
